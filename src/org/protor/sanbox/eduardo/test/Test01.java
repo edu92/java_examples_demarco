@@ -1,16 +1,16 @@
-package org.protor.polymorphism.tests;
+package org.protor.sanbox.eduardo.test;
 
-import org.protor.polymorphism.Vehicle;
-import org.protor.polymorphism.VehicleType;
+import org.protor.sanbox.eduardo.MyVehicle;
+import org.protor.sanbox.eduardo.MyVehicleType;
 
 public class Test01 {
 
 	public static void main(String[] args) {
 		
-		Vehicle v1 = new Vehicle(VehicleType.TERRESTRIAL);
+		MyVehicle v1 = new MyVehicle(MyVehicleType.TERRESTRIAL);
 		v1.setName("Fiat 600");
 		
-		Vehicle v2 = new Vehicle("Eurofighter", VehicleType.AERIAL);
+		MyVehicle v2 = new MyVehicle("Eurofighter", MyVehicleType.AERIAL);
 
 		System.out.println("v1 - Name: " + v1.getName());
 		System.out.println("v1 - Type: " + v1.getType());
