@@ -34,6 +34,7 @@ public class Car extends AbstractTerrestrialVehicle {
 	@Override
 	protected boolean loadFromFile(File configFile) {
 		// TODO Auto-generated method stub
+		System.out.println(" [Car] Reading data from file:" + configFile.getAbsolutePath());
 		return false;
 	}
 
