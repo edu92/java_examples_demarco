@@ -1,4 +1,4 @@
-package org.protor.sanbox.eduardo;
+package org.protor.sandbox.eduardo;
 
 public class Bike {
 	
