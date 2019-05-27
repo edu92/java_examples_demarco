@@ -2,14 +2,38 @@
 <cars>
 	<car id="CAR-001">
 		<description>
-			Put some text here
+			Japanese Suv
 		</description>
 		<name>Nissan XTrail</name>
-		<engine_type value="THERMICAL"/>
-		<number_of_wheels value="4">
-		<range_km value="500"/>
-		<endurance_hr value="5.0"/>
-		<passengers value="4"/>
-		<payload_kg value="250.0"/>
+		<engine_type value="THERMICAL" />
+		<number_of_wheels value="4" /> 
+		<range_km value="500" />
+		<endurance_hr value="5.0" />
+		<passengers value="4" />
+		<payload_kg value="250.0" />
+	</car>
+	<car id="CAR-002">
+		<description>
+			City car
+		</description>
+		<name>Fiat 500</name>
+		<engine_type value="THERMICAL" />
+		<number_of_wheels value="4" />
+		<range_km value="600" />
+		<endurance_hr value="6.0" />
+		<passengers value="4" />
+		<payload_kg value="250.0" />
+	</car>
+	<car id="CAR-003">
+		<description>
+			French City Car
+		</description>
+		<name> Peugeot 208</name>
+		<engine_type value="THERMICAL" />
+		<number_of_wheels value="4" />
+		<range_km value="700" />
+		<endurance_hr value="7.0" />
+		<passengers value="5" />
+		<payload_kg value="300.0" />
 	</car>
 </cars>
