@@ -96,7 +96,7 @@ public class Test03 {
 						
 						Car car = new Car(carName, engineType, range, endurance, pass, payload);
 						
-				
+						
 						
 					}
 					
