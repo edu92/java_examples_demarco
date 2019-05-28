@@ -2,22 +2,33 @@ package org.protor.sandbox.eduardo;
 
 import java.io.File;
 
+import org.w3c.dom.Node;
+
 public abstract class AbstractVehicle {
 	
-	private String name = "";
-	private EnumEngineType engineType = EnumEngineType.NONE;
-	private double range = 0.0; //km
-	private double endurance = 0.0; //hours
-	private int numMaxPassengers = 0;
-	private double maxPayload = 0.0; //kg
+	protected String name = "";
+	protected EnumEngineType engineType = EnumEngineType.NONE;
+	protected double range = 0.0; //km
+	protected double endurance = 0.0; //hours
+	protected int numMaxPassengers = 0;
+	protected double maxPayload = 0.0; //kg
 	
-	private File configFile;
+	protected File configFile;
+	protected Node node;
 	
+	// Costruttori
 	public AbstractVehicle(File configFile) {
 		this.configFile = configFile;
 		this.loadFromFile(configFile);
 	}
-	protected abstract boolean loadFromFile(File configFile);
+	protected abstract void loadFromFile(File configFile);
+	
+	public AbstractVehicle(Node node) {
+		this.node = node;
+		this.loadFromNode(this.node);
+	}
+	protected abstract void loadFromNode(Node node);
+	
 	
 	public AbstractVehicle(EnumEngineType engineType) {
 		this.engineType = engineType;

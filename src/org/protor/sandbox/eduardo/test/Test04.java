@@ -19,7 +19,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-public class Test03 {
+public class Test04 {
 
 	public static void main(String[] args) {
 
@@ -59,6 +59,9 @@ public class Test03 {
 					Node node = nodeList.item(iNode);
 					System.out.println("\nCurrent Element: " + node.getNodeName());
 					
+					Car car = new Car(node);
+					System.out.println(car);
+					
 					if (node.getNodeType() == Node.ELEMENT_NODE) {
 						Element elem = (Element) node;
 						NamedNodeMap attributesMap = elem.getAttributes();
@@ -94,9 +97,9 @@ public class Test03 {
 						break;
 						}
 						
-						Car car = new Car(carName, engineType, range, endurance, pass, payload);
+			
 						
-				
+						
 						
 					}
 					
