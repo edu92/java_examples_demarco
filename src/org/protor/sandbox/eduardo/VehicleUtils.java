@@ -36,6 +36,7 @@ public class VehicleUtils {
 
 		if (!xmlFile.exists()) {
 			System.err.println("File " + xmlFile.getAbsolutePath() + " not found.");
+			return cars;
 		}
 		System.out.println("Found file: " + xmlFile.getAbsolutePath());
 		System.out.println("---- Now reading XML content ...");
@@ -50,10 +51,8 @@ public class VehicleUtils {
 			System.out.println("File XML parsed.");
 
 			doc.getDocumentElement().normalize();
-			System.out.println("Root element: " + doc.getDocumentElement().getNodeName());
 
 			NodeList nodeList = doc.getElementsByTagName("car");
-			System.out.println(nodeList.getLength());
 
 
 			for (int iNode = 0; iNode < nodeList.getLength(); iNode++) {

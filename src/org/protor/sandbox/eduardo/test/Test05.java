@@ -17,13 +17,13 @@ public class Test05 {
 		if (args.length !=0) {
 			String filePath = args[0];
 			File carsFile = new File(filePath);
-			List<Car> cars = VehicleUtils.loadListOfCars(carsFile);
 			
-			if (cars.isEmpty()) {
+				 System.out.println("Found " + VehicleUtils.loadListOfCars(carsFile).size() + " cars.");
+			
 				System.out.println("No cars were found");
 			}
-			else System.out.println("Found " + cars.size() + " cars.");
-		} else {
+		
+		 else {
 			System.out.println("This program must be used with arguments! \nTerminating.");
 			System.exit(1);
 		}
